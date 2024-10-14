@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>my html</title>
+        <style>
+            h1{
+                text-align: center;
+                color: black;
+                background-color: blueviolet;
+            }
+            table{
+                background-color: rgb(191, 219, 147);
+                text-align: center;
+                border: 20px;
+                border-color: black;
+            }
+            body{
+                background-color: rgb(196, 196, 196);
+            }
+            footer{
+                background-color: white;
+                text-align: center;
+                padding: 3px;
+                color: black;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h1>DETAILS</h1><br><br><br><br>
+        <table border="40px" width="1000px" cellpadding="'8" cellspacing="0" align="center">
+            <tr>
+                <th>Name</th>
+                <th>Place</th>
+                <th>phonenumber</th>
+                <th>Qualification</th>
+                <th>Fathersname</th>
+                <th>Mothersname</th>
+                <th>Experience</th>
+                <tr>{%for x in data%}
+                 <td>{{x.name}}</td>
+                 <td>{{x.place}}</td>
+                 <td>{{x.phonenumber}}</td>
+                 <td>{{x.qualification}}</x></td>
+                 <td>{{x.fathersname}}</td>
+                 <td>{{x.mothersname}}</td>
+                 <td>{{x.experience}}</td>
+                </tr>    
+            {% endfor %}
+        </table>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer >
+            <p>copyright @sooraj<br>
+            <a href="#"></a>sooraj6446@gmail.com</p>
+        </footer>
+       
+    </body>
+
+
+    
+
+    
+</html>
